@@ -134,8 +134,18 @@ public class Lista<T> {
         this.tamanho--;
     }
 
+    /*
+    Remove um elemento a partir do valor dele
+     */
+    public void remove(T elemento) {
+        int pos = this.busca(elemento);
+        if (pos > -1) {
+            this.remove(pos);
+        }
+    }
+
     //Resolução do Primeiro exercício
     public boolean contem(T elemento) {
-        return busca(elemento) > -1;
+        return this.busca(elemento) > -1;
     }
 }
