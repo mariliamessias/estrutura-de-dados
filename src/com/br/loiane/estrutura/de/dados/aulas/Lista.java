@@ -95,6 +95,13 @@ public class Lista<T> {
     }
 
     /*
+    Utiliza o método busca
+     */
+    public T obtem(int posicao){
+        return this.busca(posicao);
+    }
+
+    /*
     Busca sequencial: verifica elemento por elemento até ele ser encontrado
      */
     public int busca(T elemento) {
@@ -144,7 +151,9 @@ public class Lista<T> {
         }
     }
 
-    //Resolução do Primeiro exercício
+    /*
+    Verifica se o elemento está contido na lista
+     */
     public boolean contem(T elemento) {
         return this.busca(elemento) > -1;
     }
