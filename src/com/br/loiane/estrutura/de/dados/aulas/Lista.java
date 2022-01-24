@@ -157,4 +157,12 @@ public class Lista<T> {
     public boolean contem(T elemento) {
         return this.busca(elemento) > -1;
     }
+
+    /*
+    Remover todos os elementos do array
+     */
+    public void limpar(){
+        this.elementos = (T[]) new Object[this.elementos.length];
+        this.tamanho = 0;
+    }
 }
