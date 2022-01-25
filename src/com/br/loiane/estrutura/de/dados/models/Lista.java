@@ -4,10 +4,10 @@ package com.br.loiane.estrutura.de.dados.models;
 public class Lista<T> extends EstruturaEstatica<T> {
 
     public Lista() {
-       super();
+        super();
     }
 
-    public Lista(int capacidade){
+    public Lista(int capacidade) {
         super(capacidade);
     }
 
@@ -33,7 +33,7 @@ public class Lista<T> extends EstruturaEstatica<T> {
     /*
     Utiliza o método busca
      */
-    public T obtem(int posicao){
+    public T obtem(int posicao) {
         return this.busca(posicao);
     }
 
@@ -97,7 +97,7 @@ public class Lista<T> extends EstruturaEstatica<T> {
     /*
     Remover todos os elementos do array
      */
-    public void limpar(){
+    public void limpar() {
         this.elementos = (T[]) new Object[this.elementos.length];
         this.tamanho = 0;
     }

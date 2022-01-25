@@ -9,7 +9,7 @@ public class EstruturaEstatica<T> {
         this.tamanho = 0;
     }
 
-    public EstruturaEstatica(){
+    public EstruturaEstatica() {
         this(10);
     }
 
@@ -70,5 +70,9 @@ public class EstruturaEstatica<T> {
         }
         s.append("]");
         return s.toString();
+    }
+
+    public boolean estaVazia() {
+        return this.tamanho == 0;
     }
 }
