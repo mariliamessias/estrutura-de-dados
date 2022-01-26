@@ -64,20 +64,6 @@ public class Lista<T> extends EstruturaEstatica<T> {
     }
 
     /*
-    Remover elemento a partir da posição
-     */
-    public void remove(int posicao) {
-        if (!(posicao >= 0 && posicao < tamanho)) {
-            throw new IllegalArgumentException("Posição inválida");
-        }
-
-        for (int i = posicao; i < this.tamanho - 1; i++) {
-            this.elementos[i] = this.elementos[i + 1];
-        }
-        this.tamanho--;
-    }
-
-    /*
     Remove um elemento a partir do valor dele
      */
     public void remove(T elemento) {
